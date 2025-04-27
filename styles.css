@@ -17,7 +17,7 @@ header {
 }
 
 .logo {
-    max-width: 150px; /* Adjust the logo size */
+    max-width: 50px; /* Adjust the logo size */
     height: auto; /* Maintain aspect ratio */
 }
 
@@ -39,6 +39,42 @@ header {
     top: 0;
     left: 0;
     z-index: -1; /* Send the image behind the text */
+}
+
+nav {
+    background-color: navy;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    background-color: gold; /* Change background on hover */
+    color: navy; /* Change text color on hover */
+}
+
+nav ul li a.active {
+    background-color: darkgoldenrod; /* Highlight active link */
+    color: white; /* Active link text color */
 }
 
 .cta-button {
@@ -64,6 +100,18 @@ footer {
     padding: 20px;
 }
 
+.testimonial-slider {
+    display: flex;
+    overflow: hidden; /* Hide overflow for sliding effect */
+    position: relative;
+}
+
+.testimonial {
+    min-width: 300px; /* Minimum width for each testimonial */
+    margin: 0 10px; /* Margin between testimonials */
+    transition: transform 0.5s ease; /* Smooth transition for sliding */
+}
+
 #services ul, #testimonials {
     list-style-type: none;
     padding: 0;
@@ -75,4 +123,49 @@ footer {
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f9f9f9;
+}
+
+.service-icon {
+    width:fit-content; /* Set desired width */
+    height: 1000px; /* Set desired height */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Carousel styles */
+.carousel {
+    position: relative;
+    overflow: hidden; /* Hide non-active items */
+}
+
+.carousel-inner {
+    display: flex; /* Align items in a row */
+    transition: transform 0.5s ease; /* Smooth transition for sliding */
+}
+
+.carousel-item {
+    min-width: 100%; /* Each item takes full width */
+    display: none; /* Hide all items by default */
+}
+
+.carousel-item.active {
+    display: block; /* Show only the active item */
+}
+
+/* Additional styles for about and contact pages */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+footer {
+    margin-top: 20px;
 }

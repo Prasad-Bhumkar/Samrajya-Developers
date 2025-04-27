@@ -3,71 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>Samrajya Developers</title>
 </head>
 <body>
-    <nav>
-        <img src="images/logo.png" alt="Samrajya Developers Logo" class="logo">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-navy">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Samrajya Developers Logo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <header class="hero">
-        <img src="images/Residential_home_image.jpg" alt="Completed Project" class="header-image">
+        <img src="images/Commercial_building_image.jpg" alt="Completed Project" class="header-image">
         <h1>Building Trust, Building Futures</h1>
         <p>Your trusted partner in civil contracting.</p>
         <a href="portfolio.html" class="cta-button">View Portfolio</a>
     </header>
-    <section id="services">
+    <section id="services" class="container">
         <h2>Our Services</h2>
-        <ul>
-            <li>
-                <strong>Residential Construction</strong>
-                <p>Expertise in building beautiful homes tailored to your needs.</p>
-            </li>
-            <li>
-                <strong>Commercial Construction</strong>
-                <p>Delivering high-quality commercial spaces that enhance business operations.</p>
-            </li>
-            <li>
-                <strong>Industrial Projects</strong>
-                <p>Specialized in constructing efficient industrial facilities.</p>
-            </li>
-            <li>
-                <strong>Renovations and Remodeling</strong>
-                <p>Transforming spaces to meet modern standards and aesthetics.</p>
-            </li>
-            <li>
-                <strong>Project Management</strong>
-                <p>Ensuring projects are completed on time and within budget.</p>
-            </li>
-        </ul>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/residential_icon.png" class="card-img-top" alt="Residential Construction" style="width: 500px; height: 500px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Residential Construction</h5>
+                        <p class="card-text">Expertise in building beautiful and functional homes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/commercial_icon.png" class="card-img-top" alt="Commercial Construction" style="width: 500px; height: 500px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Commercial Construction</h5>
+                        <p class="card-text">Delivering high-quality commercial spaces tailored to your needs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/industrial_icon.png" class="card-img-top" alt="Industrial Projects" style="width: 500px; height: 500px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Industrial Projects</h5>
+                        <p class="card-text">Specializing in large-scale industrial construction projects.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/renovation_icon.png" class="card-img-top" alt="Renovation Project" style="width: 500px; height: 500px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Renovation Project</h5>
+                        <p class="card-text">Description of the renovation project.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/project_management_icon.png" class="card-img-top" alt="Project Management" style="width: 500px; height: 500px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Management</h5>
+                        <p class="card-text">Description of the project management services.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/residential_icon.png" class="card-img-top" alt="Luxury Villa" style="width: 500px; height: 500px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Luxury Villa</h5>
+                        <p class="card-text">Description of the luxury villa project.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section id="testimonials">
         <h2>What Our Clients Say</h2>
-        <div class="testimonial">
-            <p>"Samrajya Developers did an amazing job on our new home. Highly recommend!"</p>
-            <p>- Client Name</p>
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <p>"Samrajya Developers did an amazing job on our new home. Highly recommend!"</p>
+                <p>- Client Name</p>
+            </div>
+            <div class="testimonial">
+                <p>"Professional and reliable. Our commercial project was completed on time."</p>
+                <p>- Client Name</p>
+            </div>
+            <div class="testimonial">
+                <p>"Exceptional quality and attention to detail!"</p>
+                <p>- Client Name</p>
+            </div>
+            <div class="testimonial">
+                <p>"The team was very responsive and attentive to our needs."</p>
+                <p>- Client Name</p>
+            </div>
         </div>
-        <div class="testimonial">
-            <p>"Professional and reliable. Our commercial project was completed on time."</p>
-            <p>- Client Name</p>
+    </section>
+    <section id="portfolio">
+        <h2>Our Projects</h2>
+        <div class="project-category">
+            <h3>Residential</h3>
+            <!-- Project items will go here -->
         </div>
-        <div class="testimonial">
-            <p>"Exceptional quality and attention to detail!"</p>
-            <p>- Client Name</p>
+        <div class="project-category">
+            <h3>Commercial</h3>
+            <!-- Project items will go here -->
         </div>
-        <div class="testimonial">
-            <p>"The team was very responsive and attentive to our needs."</p>
-            <p>- Client Name</p>
+        <div class="project-category">
+            <h3>Industrial</h3>
+            <!-- Project items will go here -->
         </div>
     </section>
     <footer>
         <p>&copy; 2023 Samrajya Developers. All rights reserved.</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+</create_file>
